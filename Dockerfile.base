@@ -1,0 +1,3 @@
+FROM maven:3.6.3 AS maven
+COPY . .
+RUN mvn -e clean package
